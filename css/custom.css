@@ -47,6 +47,29 @@
   position: absolute;
 }
 
+
+/* LIGHTBOX */
+
+.lightbox-grid,
+.lightbox-grid ul,
+.lightbox-grid li {
+  position: relative;
+  overflow: hidden;
+}
+
+.lightbox-grid li {
+  width: 15%;
+  float: left;
+  border: 0px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  opacity: 1;
+}
+.lightbox-grid li:hover {
+  opacity: .8;
+}
+
 /* Home Page Circles of cities */
 
 .city-table {
@@ -84,6 +107,12 @@
   line-height: 36px;
 }
 
+.btn-custom{
+  font-size: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(114, 114, 114, .6);
+}
 
 /* Collapsable Lists */
 
@@ -98,12 +127,34 @@
   margin-bottom: 0;
 }
 
-.active2, .collapsible:hover {
+.active2,
+.collapsible:hover {
   background-color: #fff;
 }
+
 .content {
   padding: 0;
   display: none;
   overflow: hidden;
   background-color: #fff;
+}
+
+#btn1,
+#btn2,
+#btn3,
+#btn4 {
+  position: relative;
+}
+
+#btn1.on:after,
+#btn2.on:after,
+#btn3.on:after,
+#btn4.on:after   {
+  content: "- See Less";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
 }

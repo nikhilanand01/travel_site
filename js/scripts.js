@@ -1405,6 +1405,24 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+    // Figure out how to compress this into one function  
+$("#btn1").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+$("#btn2").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+$("#btn3").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+$("#btn4").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+
 
 /*\
 |*|  END COOKIE LIBRARY
