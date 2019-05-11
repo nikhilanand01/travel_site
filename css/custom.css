@@ -152,14 +152,18 @@
 #btn1,
 #btn2,
 #btn3,
-#btn4 {
+#btn4,
+#btn5,
+#btn6 {
   position: relative;
 }
 
 #btn1.on:after,
 #btn2.on:after,
 #btn3.on:after,
-#btn4.on:after   {
+#btn4.on:after,
+#btn5.on:after,
+#btn6.on:after   {
   content: "- See Less";
   position: absolute;
   top: 0;
