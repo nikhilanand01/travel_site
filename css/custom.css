@@ -251,3 +251,9 @@ input[type=text], select {
   button[type=submit]:hover {
     background-color: #45a049;
   }
+
+/* MOBILE STYLING */
+  @media (max-width:700px){
+        .mobilecenter {
+            text-align: center;
+        }
