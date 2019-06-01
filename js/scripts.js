@@ -1430,6 +1430,18 @@ $("#btn6").on("click", function() {
   $(this).toggleClass("on");
 });
 
+$("#btn7").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+$("#btn8").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+$("#btn9").on("click", function() {
+  $(this).toggleClass("on");
+});
+
 // Text Guide Modal
 // Get the modal
 var modal = document.getElementById('myModal');

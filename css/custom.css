@@ -160,7 +160,10 @@
 #btn3,
 #btn4,
 #btn5,
-#btn6 {
+#btn6,
+#btn7,
+#btn8,
+#btn9, {
   position: relative;
 }
 
@@ -169,7 +172,10 @@
 #btn3.on:after,
 #btn4.on:after,
 #btn5.on:after,
-#btn6.on:after   {
+#btn6.on:after,
+#btn7.on:after,
+#btn8.on:after,
+#btn9.on:after, {
   content: "- See Less";
   position: absolute;
   top: 0;
@@ -181,7 +187,6 @@
 
 
 /* Text Guide Modal */
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
