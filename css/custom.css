@@ -209,7 +209,7 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 65%;
 }
 
 /* The Close Button */
@@ -265,7 +265,7 @@ input[type=text], select {
         }
 
 /* TOOLTIP */
-#tooltip
+/* #tooltip
 {
     text-align: center;
     color: #fff;
@@ -273,10 +273,10 @@ input[type=text], select {
     position: absolute;
     z-index: 100;
     padding: 15px;
-}
-
-    #tooltip:after /* triangle decoration */
-    {
+} */
+    /* #tooltip:after  */
+    /* triangle decoration */
+    /* {
         width: 0;
         height: 0;
         border-left: 10px solid transparent;
@@ -308,4 +308,4 @@ input[type=text], select {
             right: 10px;
             left: auto;
             margin: 0;
-        }
+        } */
