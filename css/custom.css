@@ -1,5 +1,11 @@
 /****** CUSTOM STYLES  ******/
 
+/* ADS */
+.adcenter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
 .full{
   border-radius: 100% / 100%;
   height: 250px;
@@ -263,10 +269,3 @@ input[type=text], select {
         .mobilecenter {
             text-align: center;
         }
-
-/* ADS */
-.adcenter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5px;
-}
