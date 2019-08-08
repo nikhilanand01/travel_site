@@ -140,8 +140,7 @@
 }
 
 /* Collapsable Lists */
-
-.collapsible {
+/* .collapsible {
   color: black;
   cursor: crosshair;
   width: 50%;
@@ -164,27 +163,11 @@
   background-color: #fff;
 }
 
-#btn1,
-#btn2,
-#btn3,
-#btn4,
-#btn5,
-#btn6,
-#btn7,
-#btn8,
-#btn9, {
+#btn1{
   position: relative;
 }
 
-#btn1.on:after,
-#btn2.on:after,
-#btn3.on:after,
-#btn4.on:after,
-#btn5.on:after,
-#btn6.on:after,
-#btn7.on:after,
-#btn8.on:after,
-#btn9.on:after, {
+#btn1.on:after{
   content: "- See Less";
   position: absolute;
   top: 0;
@@ -192,7 +175,7 @@
   right: 0;
   bottom: 0;
   background: white;
-}
+} */
 
 
 /* City Modal */
