@@ -1323,31 +1323,6 @@ function prepareSignup(iFrame){
 
 }
 
-
-
-/*\
-|*|  COOKIE LIBRARY THANKS TO MDN
-|*|
-|*|  A complete cookies reader/writer framework with full unicode support.
-|*|
-|*|  Revision #1 - September 4, 2014
-|*|
-|*|  https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
-|*|  https://developer.mozilla.org/User:fusionchess
-|*|
-|*|  This framework is released under the GNU Public License, version 3 or later.
-|*|  http://www.gnu.org/licenses/gpl-3.0-standalone.html
-|*|
-|*|  Syntaxes:
-|*|
-|*|  * mr_cookies.setItem(name, value[, end[, path[, domain[, secure]]]])
-|*|  * mr_cookies.getItem(name)
-|*|  * mr_cookies.removeItem(name[, path[, domain]])
-|*|  * mr_cookies.hasItem(name)
-|*|  * mr_cookies.keys()
-|*|
-\*/
-
 var mr_cookies = {
   getItem: function (sKey) {
     if (!sKey) { return null; }
@@ -1389,91 +1364,70 @@ var mr_cookies = {
 };
 
 // Collapsable Menu Scripts
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
+//
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("active2");
+//     var content = this.nextElementSibling;
+//     if (content.style.display === "block") {
+//       content.style.display = "none";
+//     } else {
+//       content.style.display = "block";
+//     }
+//   });
+// }
+// $("#btn1").on("click", function() {
+//   $(this).toggleClass("on");
+// });
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active2");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
-    // Figure out how to compress this into one function
-$("#btn1").on("click", function() {
-  $(this).toggleClass("on");
+// City Modal
+var modalBtns = [...document.querySelectorAll(".buttons")];
+modalBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.getAttribute('data-modal');
+    document.getElementById(modal).style.display = "block";
+  }
 });
 
-$("#btn2").on("click", function() {
-  $(this).toggleClass("on");
-});
-
-$("#btn3").on("click", function() {
-  $(this).toggleClass("on");
-});
-
-$("#btn4").on("click", function() {
-  $(this).toggleClass("on");
-});
-
-$("#btn5").on("click", function() {
-  $(this).toggleClass("on");
-});
-
-$("#btn6").on("click", function() {
-  $(this).toggleClass("on");
-});
-
-$("#btn7").on("click", function() {
-  $(this).toggleClass("on");
-});
-
-$("#btn8").on("click", function() {
-  $(this).toggleClass("on");
-});
-
-$("#btn9").on("click", function() {
-  $(this).toggleClass("on");
-});
-
-// Text Guide Modal
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("closemodal")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+var closeBtns = [...document.querySelectorAll(".close")];
+closeBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.closest('.modal');
     modal.style.display = "none";
+  }
+});
+
+window.onclick = function(event) {
+  if (event.target.className === "modal") {
+    event.target.style.display = "none";
   }
 }
 
-// Lazy Load Stuff
-const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-observer.observe();
 
-
+/*\
+|*|  COOKIE LIBRARY THANKS TO MDN
+|*|
+|*|  A complete cookies reader/writer framework with full unicode support.
+|*|
+|*|  Revision #1 - September 4, 2014
+|*|
+|*|  https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
+|*|  https://developer.mozilla.org/User:fusionchess
+|*|
+|*|  This framework is released under the GNU Public License, version 3 or later.
+|*|  http://www.gnu.org/licenses/gpl-3.0-standalone.html
+|*|
+|*|  Syntaxes:
+|*|
+|*|  * mr_cookies.setItem(name, value[, end[, path[, domain[, secure]]]])
+|*|  * mr_cookies.getItem(name)
+|*|  * mr_cookies.removeItem(name[, path[, domain]])
+|*|  * mr_cookies.hasItem(name)
+|*|  * mr_cookies.keys()
+|*|
+\*/
 /*\
 |*|  END COOKIE LIBRARY
 \*/
