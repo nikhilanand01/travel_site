@@ -1364,23 +1364,41 @@ var mr_cookies = {
 };
 
 // Collapsable Menu Scripts
-// var coll = document.getElementsByClassName("collapsible");
-// var i;
-//
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active2");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
-// }
-// $("#btn1").on("click", function() {
-//   $(this).toggleClass("on");
-// });
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active3");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+$("#btn1").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+$("#btn2").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+$("#btn3").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+$("#btn4").on("click", function() {
+  $(this).toggleClass("on");
+});
+
+$("#btn5").on("click", function() {
+  $(this).toggleClass("on");
+});
 
 // City Modal
 var modalBtns = [...document.querySelectorAll(".buttons")];
