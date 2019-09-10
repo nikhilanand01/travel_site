@@ -262,3 +262,6 @@ input[type=text], select {
         .mobilecenter {
             text-align: center;
         }
+        .mobilespacer {
+          margin-top: 15%;
+        }
