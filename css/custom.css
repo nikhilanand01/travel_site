@@ -142,13 +142,13 @@
 /* Collapsable Lists */
 .collapsible {
   color: black;
-  cursor: crosshair;
   width: 50%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 12.5px;
   margin-bottom: 0;
+  background: none;
 }
 
 .active3,
